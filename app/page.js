@@ -10,6 +10,7 @@ export default function Page() {
         <Link href="week-3" className="block p-3 bg-yellow-400 text-pink-900 font-bold rounded-lg shadow-md hover:scale-105 transition-transform">Week-3</Link>
         <Link href="week-4" className="block p-3 bg-yellow-400 text-pink-900 font-bold rounded-lg shadow-md hover:scale-105 transition-transform">Week-4</Link>
         <Link href="week-5" className="block p-3 bg-yellow-400 text-pink-900 font-bold rounded-lg shadow-md hover:scale-105 transition-transform">Week-5</Link>
+        <Link href="week-6" className="block p-3 bg-yellow-400 text-pink-900 font-bold rounded-lg shadow-md hover:scale-105 transition-transform">Week-6</Link>
 
       </div>
     </div>
