@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { Item } from "./item";
+
 import itemsData from "./items.json"; // Import items from JSON file
 
-export function ItemList() {
+export default function ItemList({ items }) {
   const [sortBy, setSortBy] = useState("name"); // State for sorting criteria
 
   // Sort items based on sortBy state
@@ -36,11 +37,14 @@ export function ItemList() {
       </div>
 
       {/* Render sorted items */}
-      <ul className="space-y-4">
-        {sortedItems.map((item) => (
-          <Item key={item.id} {...item} />
-        ))}
-      </ul>
+      <ul className="mt-6 space-y-4">
+      {items.map((item) => (
+        <li key={item.id} className="p-4 bg-white text-black rounded-lg shadow">
+          <strong>{item.name}</strong> - {item.quantity} ({item.category})
+        </li>
+      ))}
+    </ul>
+      
     </div>
   );
 }
